@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 
-
 import { AppComponent } from './app.component'
 import { AboutComponent } from './about/about.component'
 import { PortfolioComponent } from './portfolio/portfolio.component'
@@ -11,7 +10,6 @@ import { StatusComponent } from './status/status.component'
 import { ContactComponent } from './contact/contact.component'
 import { HomeComponent } from './home/home.component'
 
-
 const appRoutes: Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'home', component: HomeComponent },
@@ -19,10 +17,10 @@ const appRoutes: Routes = [
 	{ path: 'portfolio', component: PortfolioComponent },
 	{ path: 'feed', component: FeedComponent },
 	{ path: 'status', component: StatusComponent },
-	{ path: 'contact', component: ContactComponent },
+	{ path: 'contact', component: ContactComponent }
 ]
 
-@NgModule( {
+@NgModule({
 	declarations: [
 		AppComponent,
 		AboutComponent,
@@ -32,14 +30,9 @@ const appRoutes: Routes = [
 		ContactComponent,
 		HomeComponent
 	],
-	imports: [
-		BrowserModule,
-		RouterModule.forRoot( appRoutes )
-	],
-	exports: [
-		RouterModule,
-	],
+	imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
+	exports: [RouterModule],
 	providers: [],
-	bootstrap: [ AppComponent ]
-} )
-export class AppModule { }
+	bootstrap: [AppComponent]
+})
+export class AppModule {}

@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core'
 
-@Component( {
+@Component({
 	selector: 'app-status',
 	templateUrl: './status.component.html',
-	styleUrls: [ './status.component.css' ]
-} )
+	styleUrls: ['./status.component.css']
+})
 export class StatusComponent implements OnInit {
 	title = 'home'
 
-	constructor() { }
+	constructor() {}
 
-	ngOnInit() {
-	}
-
+	ngOnInit() {}
 }

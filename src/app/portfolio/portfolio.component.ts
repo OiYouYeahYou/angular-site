@@ -1,16 +1,14 @@
 import { Component, OnInit } from '@angular/core'
 
-@Component( {
+@Component({
 	selector: 'app-portfolio',
 	templateUrl: './portfolio.component.html',
-	styleUrls: [ './portfolio.component.css' ]
-} )
+	styleUrls: ['./portfolio.component.css']
+})
 export class PortfolioComponent implements OnInit {
 	title = 'home'
 
-	constructor() { }
+	constructor() {}
 
-	ngOnInit() {
-	}
-
+	ngOnInit() {}
 }
