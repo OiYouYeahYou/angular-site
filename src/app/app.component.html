@@ -2,18 +2,8 @@
 
 
 <header>
-	<h2>
-		Jason Allan - {{title}}
-	</h2>
-
-	<nav>
-		<a routerLink="/home" routerLinkActive="active">home</a>
-		<a routerLink="/about" routerLinkActive="active">about</a>
-		<a routerLink="/portfolio" routerLinkActive="active">portfolio</a>
-		<a routerLink="/feed" routerLinkActive="active">feed</a>
-		<a routerLink="/status" routerLinkActive="active">status</a>
-		<a routerLink="/contact" routerLinkActive="active">contact</a>
-	</nav>
+	<h2>Jason Allan - {{title}}</h2>
+	<app-navigation></app-navigation>
 </header>
 <br>
 <article>
@@ -23,13 +13,6 @@
 </article>
 <hr>
 <footer>
-	<nav>
-		<a routerLink="/home" routerLinkActive="active">home</a>
-		<a routerLink="/about" routerLinkActive="active">about</a>
-		<a routerLink="/portfolio" routerLinkActive="active">portfolio</a>
-		<a routerLink="/feed" routerLinkActive="active">feed</a>
-		<a routerLink="/status" routerLinkActive="active">status</a>
-		<a routerLink="/contact" routerLinkActive="active">contact</a>
-	</nav>
+	<app-navigation></app-navigation>
 	Copyright Jason Allan 2015
 </footer>

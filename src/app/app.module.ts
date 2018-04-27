@@ -9,6 +9,7 @@ import { FeedComponent } from './feed/feed.component'
 import { StatusComponent } from './status/status.component'
 import { ContactComponent } from './contact/contact.component'
 import { HomeComponent } from './home/home.component'
+import { NavigationComponent } from './navigation/navigation.component'
 
 const appRoutes: Routes = [
 	{ path: '', component: HomeComponent },
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
 		FeedComponent,
 		StatusComponent,
 		ContactComponent,
-		HomeComponent
+		HomeComponent,
+		NavigationComponent
 	],
 	imports: [BrowserModule, RouterModule.forRoot(appRoutes)],
 	exports: [RouterModule],
